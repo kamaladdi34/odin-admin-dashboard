@@ -7,16 +7,86 @@
 body{
     display: grid;
     grid-template-columns: 300px 1fr;
-    grid-template-rows: 100px 1fr;
+    grid-template-rows: 150px 1fr;
     min-height: 100vh;
 }
 header{
     background-color: aliceblue;
-    grid-area: 1/1/2/-1;
+    grid-area: 1/2/2/-1;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 1rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
 }
 aside{
     background-color: antiquewhite;
+    grid-area: 1/1/-1/2;
 }
 main{
     background-color: aquamarine;
+    grid-area: 2/2/-1/-1;
+}
+.svg{
+    height: 1.5rem;
+}
+.search-bar{
+    grid-area: 1/1/2/2;
+}
+.search-bar input{
+    width: 70%;
+    border: none;
+    height: 25px;
+    border-radius: 100px;
+}
+.user-bar{
+    grid-area: 1/2/2/3;
+    font-weight: bold;
+}
+.search-bar,.user-bar,.user-profile{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+}
+.user-bar{
+    justify-content: flex-end;
+}
+.user-tools{
+    grid-area: 2/1/-1/-1;
+}
+.user-bar .user-profile-image{
+    max-height: 35px;
+}
+.user-tools .user-profile-image{
+    max-height: 50px;
+}
+.user-profile-image{
+    border-radius: 100%;
+}
+.user-tools{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.welcome-message{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.welcome-message .user-name{
+    font-weight: bold;
+    font-size: 19px;
+}
+.user-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 15px;
+}
+.user-buttons button{
+    padding: 5px 15px 5px 15px;
+    border: none;
+    background-color: white;
+    border-radius: 25px;
 }
