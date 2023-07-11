@@ -164,3 +164,18 @@ main{
 .announcements{
     padding-bottom: 15px;
 }
+.trending-image{
+    width: 45px;
+    border-radius: 100%;
+}
+.trending-item{
+    display: flex;
+    gap: 15px;
+}
+.trending ul{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    border: solid 2px;
+}
