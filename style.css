@@ -115,3 +115,22 @@ main{
 .secondary-menu, .main-menu{
     padding-top: 3rem;
 }
+.projects{
+    grid-area: 1/1/-1/2;
+    padding: 15px;
+}
+.projects > p{
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+.projects-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-auto-rows: 250px;
+    gap: 15px;
+}
+.project{
+    background-color: white;
+    padding: 25px;
+    border: 2px solid;
+}
