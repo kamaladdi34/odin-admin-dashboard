@@ -12,7 +12,7 @@ body{
     min-height: 100vh;
 }
 header{
-    background-color: rgb(255, 255, 255);
+    background-color: #656CDE;
     grid-area: 1/2/2/-1;
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -20,19 +20,23 @@ header{
     padding: 1rem;
     padding-right: 4rem;
     padding-left: 4rem;
-    border-bottom: 2px solid;
+    color: white;
 }
 aside{
-    background-color: rgb(255, 255, 255);
+    background-color: #202237;
+    color: white;
     grid-area: 1/1/-1/2;
     padding: 1rem;
-    border-right: 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+aside .svg, header .svg{
+    filter: invert(48%) sepia(0%) saturate(2476%) hue-rotate(0deg) brightness(1182%) contrast(119%);
 }
 main{
-    background-color: rgb(255, 255, 255);
+    background-color: #fcfcfc;
     grid-area: 2/2/-1/-1;
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 4fr 350px;
     grid-template-rows: 1fr;
 }
 .svg{
@@ -46,7 +50,6 @@ main{
     border: none;
     height: 25px;
     border-radius: 100px;
-    border: 2px solid;
 }
 .user-bar{
     grid-area: 1/2/2/3;
@@ -95,10 +98,11 @@ main{
 .user-buttons button{
     padding: 5px 15px 5px 15px;
     border: none;
-    background-color: rgb(255, 255, 255);
+    background-color: #ffffff;
+    color: #020202;
     border-radius: 5px;
-    border: 2px solid;
     font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .logo, .menu-item{
     display: flex;
@@ -133,10 +137,10 @@ main{
 .project{
     background-color: white;
     padding: 25px;
-    border: 2px solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 .project > .buttons{
     align-self: flex-end;
@@ -147,11 +151,9 @@ main{
 }
 .announcements-content{
     padding: 15px;
-    border: solid 2px;
 }
 .announcements-content ul li{
     padding-bottom: 15px;
-    border-bottom: 2px solid;
     padding-top: 15px;
 }
 .announcements-content ul li:last-child{
@@ -177,5 +179,8 @@ main{
     flex-direction: column;
     gap: 15px;
     padding: 15px;
-    border: solid 2px;
+}
+.announcements-content ,.trending-content{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
 }
