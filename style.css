@@ -3,6 +3,7 @@
     margin: 0px;
     box-sizing: border-box;
     font-family: sans-serif;
+    list-style-type: none;
 }
 body{
     display: grid;
@@ -133,4 +134,33 @@ main{
     background-color: white;
     padding: 25px;
     border: 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.project > .buttons{
+    align-self: flex-end;
+}
+.announcements > p , .trending > p{
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.announcements-content{
+    padding: 15px;
+    border: solid 2px;
+}
+.announcements-content ul li{
+    padding-bottom: 15px;
+    border-bottom: 2px solid;
+    padding-top: 15px;
+}
+.announcements-content ul li:last-child{
+    padding-bottom: 0px;
+    border-bottom: none;
+}
+.side{
+    padding: 15px;
+}
+.announcements{
+    padding-bottom: 15px;
 }
