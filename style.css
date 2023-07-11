@@ -30,6 +30,9 @@ aside{
 main{
     background-color: rgb(255, 255, 255);
     grid-area: 2/2/-1/-1;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr;
 }
 .svg{
     height: 1.5rem;
