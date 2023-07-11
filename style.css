@@ -11,7 +11,7 @@ body{
     min-height: 100vh;
 }
 header{
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
     grid-area: 1/2/2/-1;
     display: grid;
     grid-template-columns: 5fr 2fr;
@@ -19,14 +19,16 @@ header{
     padding: 1rem;
     padding-right: 4rem;
     padding-left: 4rem;
+    border-bottom: 2px solid;
 }
 aside{
-    background-color: rgb(247, 251, 255);
+    background-color: rgb(255, 255, 255);
     grid-area: 1/1/-1/2;
     padding: 1rem;
+    border-right: 2px solid;
 }
 main{
-    background-color: rgb(224, 233, 240);
+    background-color: rgb(255, 255, 255);
     grid-area: 2/2/-1/-1;
 }
 .svg{
@@ -40,6 +42,7 @@ main{
     border: none;
     height: 25px;
     border-radius: 100px;
+    border: 2px solid;
 }
 .user-bar{
     grid-area: 1/2/2/3;
@@ -88,8 +91,10 @@ main{
 .user-buttons button{
     padding: 5px 15px 5px 15px;
     border: none;
-    background-color: white;
-    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid;
+    font-weight: bold;
 }
 .logo, .menu-item{
     display: flex;
